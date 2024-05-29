@@ -5,7 +5,6 @@ import lombok.*;
 import umc.study.domain.Member;
 import umc.study.domain.Mission;
 import umc.study.domain.MissionStatus;
-import umc.study.domain.Terms;
 import umc.study.domain.common.BaseEntity;
 
 @Entity
