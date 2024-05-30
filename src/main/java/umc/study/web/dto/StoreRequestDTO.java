@@ -3,9 +3,8 @@ package umc.study.web.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
-import umc.study.validation.annotation.ExistCategories;
 
-import java.util.List;
+import java.time.LocalDate;
 
 public class StoreRequestDTO {
 
@@ -17,5 +16,15 @@ public class StoreRequestDTO {
         Float score;
         @NotBlank
         String body;
+    }
+
+    @Getter
+    public static class MissionDTO {
+        @NotNull
+        Integer reward;
+        @NotNull
+        LocalDate deadline;
+        @NotBlank
+        String missionSpec;
     }
 }
